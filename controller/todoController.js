@@ -16,11 +16,11 @@ module.exports = function(app) {
     res.json(data);
   });
 
-  // app.delete('/todo/:item', function(req, res) {
-  //   data = data.filter(function(todo) {
-  //     return todo.item.replace(/ /g, '-') !== req.params.item;
-  //   });
-  //   // res.render('todo', { todo: data });
-  //   res.json(data);
-  // });
+  app.delete('/todo/:item', function(req, res) {
+    data = data.filter(function(todo) {
+      return todo.item.replace(/ /g, '-') !== req.params.item;
+    });
+    // res.render('todo', { todo: data });
+    res.json(data);
+  });
 };
