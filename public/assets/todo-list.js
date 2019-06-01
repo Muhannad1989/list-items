@@ -1,5 +1,6 @@
 $(document).ready(function() {
   // once submit add new value and send it to the url per per post
+  // add new item
   $('form').on('submit', function() {
     var item = $('form input');
     var todo = { item: item.val().trim() };
@@ -23,6 +24,7 @@ $(document).ready(function() {
     return false;
   });
 
+  // delete specific item
   $('li').on('click', function() {
     // once click on any li
     var item = $(this)

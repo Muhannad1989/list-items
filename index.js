@@ -1,7 +1,7 @@
 // reload modules
-const mongoose = require('mongoose');
-const http = require('http');
-const fs = require('fs');
+// const mongoose = require('mongoose');
+// const http = require('http');
+// const fs = require('fs');
 const express = require('express');
 const todoController = require('./controller/todoController');
 
@@ -18,6 +18,6 @@ app.use(express.static('public'));
 todoController(app);
 
 // listen to port
-const port = 3000;
+const port = 5000;
 app.listen(port);
 console.log(`you are listening to port ${port}`);
